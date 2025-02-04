@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Вишлист подарков</h1>
-        <ul id="gift-list">
-            <li>Книга <button onclick="reserveGift(this)">Забронировать</button></li>
-            <li>Настольная игра <button onclick="reserveGift(this)">Забронировать</button></li>
-            <li>Ароматическая свеча <button onclick="reserveGift(this)">Забронировать</button></li>
-            <li>Подарочный сертификат <button onclick="reserveGift(this)">Забронировать</button></li>
-        </ul>
-    </div>
+    <h1>Вишлист подарков</h1>
+    
+    <h2>Доступные подарки</h2>
+    <ul id="gift-list">
+        <li>
+            <span class="gift-name">Подарок 1 - Описание подарка 1</span>
+            <button onclick="reserveGift(this)">Зарезервировать</button>
+        </li>
+        <li>
+            <span class="gift-name">Подарок 2 - Описание подарка 2</span>
+            <button onclick="reserveGift(this)">Зарезервировать</button>
+        </li>
+        <li>
+            <span class="gift-name">Подарок 3 - Описание подарка 3</span>
+            <button onclick="reserveGift(this)">Зарезервировать</button>
+        </li>
+    </ul>
+
+    <h2>Зарезервированные подарки</h2>
+    <ul id="reserved-gifts"></ul>
 
     <script src="script.js"></script>
 </body>
